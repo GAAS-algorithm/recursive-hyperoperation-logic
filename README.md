@@ -25,7 +25,7 @@ Algorithm that enabled 100% IRR for 12 consecutive years.
 ## ドキュメント
 
 - **[HYPEROPERATION_LOGIC.md](./HYPEROPERATION_LOGIC.md)** — IRR 100%超を12年継続するための構造設計の完全版
-- **[最初の100億円の稼ぎかた/](./最初の100億円の稼ぎかた/)** — AdS/CFT双対性に基づく100億円〜100兆円スケールの同値性理論
+- **[最初の100億円の稼ぎかた（仮説）/](./最初の100億円の稼ぎかた（仮説）/)** — AdS/CFT双対性に基づく100億円〜100兆円スケールの同値性理論
 - **[WHY_12_YEARS_IRR_100_PLUS.md](./WHY_12_YEARS_IRR_100_PLUS.md)** — ontology/topology から見た12年間IRR 100%超の構造的要因
 - **[GAAS_2021_2025_STRUCTURE.md](./GAAS_2021_2025_STRUCTURE.md)** — GAAS 2021リリース〜2025 FT日本1位の客観的認証連鎖の構造的理由
 
