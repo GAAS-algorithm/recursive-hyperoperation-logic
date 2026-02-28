@@ -6,6 +6,7 @@
 
 - **[AdS_CFT双対性とスケールの同値性.md](./AdS_CFT双対性とスケールの同値性.md)** — 100億円〜100兆円スケールの同値性、ホログラフィック理論、Functor による複雑性の圧縮
 - **[sphereの境界面In_Out.md](./sphereの境界面In_Out.md)** — 本としての sphere の境界面 In/Out、従来型と引力モデル（ブラックホール境界面）
+- **[Incompressibility_Principle.md](./Incompressibility_Principle.md)** — 非圧縮性の原理、複雑系と相関の関係、理論的裏付け
 
 ## 位置づけ
 
