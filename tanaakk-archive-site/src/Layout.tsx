@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "@solidjs/router";
 import { createMemo, createSignal } from "solid-js";
-import { Archive, Globe, BookOpen, ExternalLink, FileText, ChevronDown, Menu, X } from "lucide-solid";
+import { Archive, Globe, BookOpen, ExternalLink, ChevronDown, Menu, X } from "lucide-solid";
 import { LocaleContext } from "./context/LocaleContext";
 import { locales, localeNames, translations } from "./i18n/translations";
 import type { Locale } from "./i18n/translations";
@@ -8,7 +8,6 @@ import HomePage from "./pages/HomePage";
 import HST from "./pages/HST";
 import UniversalGuideline from "./pages/UniversalGuideline";
 import Sites from "./pages/Sites";
-import Statements from "./pages/Statements";
 import type { Page } from "./pages/HomePage";
 
 const navItems: { id: Page; icon: typeof Archive }[] = [
@@ -16,7 +15,6 @@ const navItems: { id: Page; icon: typeof Archive }[] = [
   { id: "hst", icon: Globe },
   { id: "guideline", icon: BookOpen },
   { id: "sites", icon: ExternalLink },
-  { id: "statements", icon: FileText },
 ];
 
 function isValidLocale(lang: string | undefined): lang is Locale {
@@ -38,7 +36,6 @@ export default function Layout() {
     if (p === "hst") return "hst";
     if (p === "guideline") return "guideline";
     if (p === "sites") return "sites";
-    if (p === "statements") return "statements";
     return "home";
   });
 
@@ -150,7 +147,7 @@ export default function Layout() {
               }`}
             >
               <Archive class="size-4" />
-              {t().nav.home}
+              {t().nav.top}
             </button>
             {navItems.filter((i) => i.id !== "home").map((item) => {
               const Icon = item.icon;
@@ -185,6 +182,15 @@ export default function Layout() {
         <div class="flex">
           <aside class="hidden lg:flex sticky top-14 h-[calc(100vh-3.5rem)] w-56 shrink-0 flex-col border-r border-slate-200 bg-white">
             <nav class="flex flex-col gap-1 p-4">
+              <button
+                onClick={() => setPage("home")}
+                class={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                  page() === "home" ? "bg-cyan-50 text-cyan-600" : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                }`}
+              >
+                <Archive class="size-4" />
+                {t().nav.top}
+              </button>
               {navItems.filter((i) => i.id !== "home").map((item) => {
                 const Icon = item.icon;
                 const label = t().nav[item.id as keyof typeof t.nav];
@@ -221,7 +227,6 @@ export default function Layout() {
               {page() === "hst" && <HST lang={lang()} onBack={() => setPage("home")} />}
               {page() === "guideline" && <UniversalGuideline lang={lang()} onBack={() => setPage("home")} />}
               {page() === "sites" && <Sites lang={lang()} t={t()} />}
-              {page() === "statements" && <Statements lang={lang()} t={t()} />}
             </div>
           </main>
         </div>

@@ -18,7 +18,6 @@ export default function HST(props: { lang: Locale; onBack: () => void }) {
         <h1 class="text-3xl font-bold text-slate-900 sm:text-4xl">
           Holographic Sphere Topology｜GAAS流システム論HST
         </h1>
-        <p class="mt-2 text-cyan-600">Growth-as-a-Service™ | Decrypt History, Encrypt Future™</p>
         <p class="mt-4 text-slate-600">2026年2月26日 — GAASにおける次世代開発標準スタックへの移行と技術負債ゼロに向けた転換方針</p>
       </header>
 

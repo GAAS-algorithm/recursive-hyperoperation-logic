@@ -105,28 +105,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://gaas.tanaakk.com/en/statements</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/statements"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/statements"/>
-    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/statements"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gaas.tanaakk.com/ja/statements</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/statements"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/statements"/>
-    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/statements"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gaas.tanaakk.com/vn/statements</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/statements"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/statements"/>
-    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/statements"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 </urlset>

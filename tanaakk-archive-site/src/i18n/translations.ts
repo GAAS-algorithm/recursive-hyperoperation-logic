@@ -16,15 +16,21 @@ export const translations = {
   en: {
     nav: {
       home: "Home",
+      top: "Top",
       hst: "HST",
       guideline: "Universal Guideline",
       sites: "Sites",
-      statements: "Statements",
     },
     home: {
-      title: "TANAAKK Archive",
+      title: "The theoretical shift of GAAS",
       subtitle: "A precious sample of Earth's history—from founding through crossing the chasm",
-      tagline: "Growth-as-a-Service™ | Decrypt History, Encrypt Future™",
+      tagline: "",
+      phases: [
+        { name: "Phase 1", period: "2006-2020" },
+        { name: "Phase 2", period: "2021-2024" },
+        { name: "Phase 3", period: "2025-2026" },
+        { name: "Phase 4", period: "2026-" },
+      ],
       hst: {
         title: "Holographic Sphere Topology",
         desc: "GAAS systems theory HST. Migration to next-gen dev stack and zero technical debt. Boundary definition with SolidJS, Tailwind v4, Bun, Drizzle, Lucide.",
@@ -42,7 +48,7 @@ export const translations = {
       },
     },
     footer: {
-      tagline: "Growth-as-a-Service™ | Decrypt History, Encrypt Future™",
+      tagline: "",
       sample: "A precious sample of Earth's history — TANAAKK from founding to crossing the chasm",
       original: "Original",
       github: "GitHub",
@@ -57,11 +63,6 @@ export const translations = {
         { name: "HST Original", desc: "Holographic Sphere Topology | GAAS systems theory" },
       ],
     },
-    statements: {
-      title: "Statements",
-      subtitle: "TANAAKK management, statements, announcements",
-      placeholder: "Chairman's Statement, management policy, investor statements will be archived here.",
-    },
     common: {
       back: "Back",
     },
@@ -69,15 +70,21 @@ export const translations = {
   ja: {
     nav: {
       home: "Home",
+      top: "Top",
       hst: "HST",
       guideline: "Universal Guideline",
       sites: "Sites",
-      statements: "Statements",
     },
     home: {
-      title: "TANAAKK Archive",
+      title: "The theoretical shift of GAAS",
       subtitle: "創業からキャズムを超えてブレークスルーした、地球の歴史における貴重なサンプルは決して",
-      tagline: "Growth-as-a-Service™ | Decrypt History, Encrypt Future™",
+      tagline: "",
+      phases: [
+        { name: "Phase 1", period: "2006-2020" },
+        { name: "Phase 2", period: "2021-2024" },
+        { name: "Phase 3", period: "2025-2026" },
+        { name: "Phase 4", period: "2026-" },
+      ],
       hst: {
         title: "Holographic Sphere Topology",
         desc: "GAAS流システム論HST。次世代開発標準スタックへの移行と技術負債ゼロに向けた転換方針。SolidJS、Tailwind v4、Bun、Drizzle、Lucideによる境界面の定義。",
@@ -95,7 +102,7 @@ export const translations = {
       },
     },
     footer: {
-      tagline: "Growth-as-a-Service™ | Decrypt History, Encrypt Future™",
+      tagline: "",
       sample: "地球の歴史における貴重なサンプル — TANAAKK創業からキャズム突破までの記録",
       original: "原文",
       github: "GitHub",
@@ -110,11 +117,6 @@ export const translations = {
         { name: "HST 原文", desc: "Holographic Sphere Topology｜GAAS流システム論" },
       ],
     },
-    statements: {
-      title: "Statements",
-      subtitle: "TANAAKK 経営陣・声明・ステートメント",
-      placeholder: "Chairman's Statement、経営方針、投資家向け声明などのアーカイブはこちらに掲載予定です。",
-    },
     common: {
       back: "戻る",
     },
@@ -122,15 +124,21 @@ export const translations = {
   vn: {
     nav: {
       home: "Home",
+      top: "Top",
       hst: "HST",
       guideline: "Universal Guideline",
       sites: "Sites",
-      statements: "Statements",
     },
     home: {
-      title: "TANAAKK Archive",
+      title: "The theoretical shift of GAAS",
       subtitle: "Mẫu quý giá trong lịch sử Trái đất—từ khởi nghiệp đến vượt qua vực thẳm",
-      tagline: "Growth-as-a-Service™ | Decrypt History, Encrypt Future™",
+      tagline: "",
+      phases: [
+        { name: "Phase 1", period: "2006-2020" },
+        { name: "Phase 2", period: "2021-2024" },
+        { name: "Phase 3", period: "2025-2026" },
+        { name: "Phase 4", period: "2026-" },
+      ],
       hst: {
         title: "Holographic Sphere Topology",
         desc: "Lý thuyết hệ thống GAAS HST. Chuyển đổi sang stack phát triển thế hệ mới và không nợ kỹ thuật. Định nghĩa ranh giới với SolidJS, Tailwind v4, Bun, Drizzle, Lucide.",
@@ -148,7 +156,7 @@ export const translations = {
       },
     },
     footer: {
-      tagline: "Growth-as-a-Service™ | Decrypt History, Encrypt Future™",
+      tagline: "",
       sample: "Mẫu quý giá trong lịch sử Trái đất — TANAAKK từ khởi nghiệp đến vượt vực thẳm",
       original: "Bản gốc",
       github: "GitHub",
@@ -162,11 +170,6 @@ export const translations = {
         { name: "Universal Guideline", desc: "Quy tắc chung schema dữ liệu, API, SaaS" },
         { name: "HST gốc", desc: "Holographic Sphere Topology | Lý thuyết hệ thống GAAS" },
       ],
-    },
-    statements: {
-      title: "Statements",
-      subtitle: "Ban lãnh đạo TANAAKK, tuyên bố, thông báo",
-      placeholder: "Chairman's Statement, chính sách quản lý, tuyên bố nhà đầu tư sẽ được lưu trữ tại đây.",
     },
     common: {
       back: "Quay lại",
