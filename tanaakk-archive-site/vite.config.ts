@@ -17,7 +17,7 @@ function getCommitCount(): string {
 export default defineConfig({
   plugins: [solid(), tailwindcss()],
   define: {
-    __APP_VERSION__: JSON.stringify(pkg.version),
+    __APP_VERSION__: JSON.stringify(`1.0.${getCommitCount()}`),
     __COMMIT_COUNT__: JSON.stringify(getCommitCount()),
   },
 });

@@ -34,50 +34,218 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://gaas.tanaakk.com/en/hst</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/hst"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/hst"/>
-    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/hst"/>
+    <loc>https://gaas.tanaakk.com/en/axiom</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/axiom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/axiom"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/axiom"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gaas.tanaakk.com/ja/hst</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/hst"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/hst"/>
-    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/hst"/>
+    <loc>https://gaas.tanaakk.com/ja/axiom</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/axiom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/axiom"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/axiom"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gaas.tanaakk.com/vn/hst</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/hst"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/hst"/>
-    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/hst"/>
+    <loc>https://gaas.tanaakk.com/vn/axiom</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/axiom"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/axiom"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/axiom"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gaas.tanaakk.com/en/guideline</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/guideline"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/guideline"/>
-    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/guideline"/>
+    <loc>https://gaas.tanaakk.com/en/proposition</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/proposition"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/proposition"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/proposition"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gaas.tanaakk.com/ja/guideline</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/guideline"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/guideline"/>
-    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/guideline"/>
+    <loc>https://gaas.tanaakk.com/ja/proposition</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/proposition"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/proposition"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/proposition"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gaas.tanaakk.com/vn/guideline</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/guideline"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/guideline"/>
-    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/guideline"/>
+    <loc>https://gaas.tanaakk.com/vn/proposition</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/proposition"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/proposition"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/proposition"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/en/statement</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/statement"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/statement"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/statement"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/ja/statement</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/statement"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/statement"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/statement"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/vn/statement</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/statement"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/statement"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/statement"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/en/statement/hst</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/statement/hst"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/statement/hst"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/statement/hst"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/ja/statement/hst</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/statement/hst"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/statement/hst"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/statement/hst"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/vn/statement/hst</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/statement/hst"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/statement/hst"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/statement/hst"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/en/theorem</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/theorem"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/theorem"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/theorem"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/ja/theorem</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/theorem"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/theorem"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/theorem"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/vn/theorem</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/theorem"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/theorem"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/theorem"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/en/pipeline</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/pipeline"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/pipeline"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/pipeline"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/ja/pipeline</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/pipeline"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/pipeline"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/pipeline"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/vn/pipeline</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/pipeline"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/pipeline"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/pipeline"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/en/schema</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/schema"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/schema"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/schema"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/ja/schema</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/schema"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/schema"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/schema"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/vn/schema</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/schema"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/schema"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/schema"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/en/framework</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/framework"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/framework"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/framework"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/ja/framework</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/framework"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/framework"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/framework"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/vn/framework</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/framework"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/framework"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/framework"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/en/toolkit</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/toolkit"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/toolkit"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/toolkit"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/ja/toolkit</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/toolkit"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/toolkit"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/toolkit"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaas.tanaakk.com/vn/toolkit</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gaas.tanaakk.com/en/toolkit"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gaas.tanaakk.com/ja/toolkit"/>
+    <xhtml:link rel="alternate" hreflang="vn" href="https://gaas.tanaakk.com/vn/toolkit"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -1,19 +1,34 @@
 import { useParams, useNavigate } from "@solidjs/router";
 import { createMemo, createSignal } from "solid-js";
-import { Archive, Globe, BookOpen, ExternalLink, ChevronDown, Menu, X } from "lucide-solid";
+import { Archive, GitBranch, Database, MessageSquare, FileCheck, Box, BookMarked, Lightbulb, Layers, Wrench, ExternalLink, ChevronDown, Menu, X } from "lucide-solid";
 import { LocaleContext } from "./context/LocaleContext";
 import { locales, localeNames, translations } from "./i18n/translations";
 import type { Locale } from "./i18n/translations";
 import HomePage from "./pages/HomePage";
+import Theory from "./pages/Theory";
+import Pipeline from "./pages/Pipeline";
+import Statement from "./pages/Statement";
 import HST from "./pages/HST";
-import UniversalGuideline from "./pages/UniversalGuideline";
+import Proposition from "./pages/Proposition";
+import Axiom from "./pages/Axiom";
+import Framework from "./pages/Framework";
+import Toolkit from "./pages/Toolkit";
+import Theorem from "./pages/Theorem";
+import Schema from "./pages/Schema";
 import Sites from "./pages/Sites";
 import type { Page } from "./pages/HomePage";
 
-const navItems: { id: Page; icon: typeof Archive }[] = [
+const SIDEBAR_ORDER: { id: Page; icon: typeof Archive }[] = [
   { id: "home", icon: Archive },
-  { id: "hst", icon: Globe },
-  { id: "guideline", icon: BookOpen },
+  { id: "pipeline", icon: GitBranch },
+  { id: "statement", icon: MessageSquare },
+  { id: "proposition", icon: FileCheck },
+  { id: "axiom", icon: Box },
+  { id: "theorem", icon: BookMarked },
+  { id: "theory", icon: Lightbulb },
+  { id: "schema", icon: Database },
+  { id: "framework", icon: Layers },
+  { id: "toolkit", icon: Wrench },
   { id: "sites", icon: ExternalLink },
 ];
 
@@ -22,7 +37,7 @@ function isValidLocale(lang: string | undefined): lang is Locale {
 }
 
 export default function Layout() {
-  const params = useParams<{ lang: string; page?: string }>();
+  const params = useParams<{ lang: string; page?: string; subpage?: string }>();
   const navigate = useNavigate();
 
   const lang = createMemo(() => {
@@ -33,8 +48,15 @@ export default function Layout() {
   const t = createMemo(() => translations[lang()]);
   const page = createMemo((): Page => {
     const p = params.page;
-    if (p === "hst") return "hst";
-    if (p === "guideline") return "guideline";
+    if (p === "pipeline") return "pipeline";
+    if (p === "schema") return "schema";
+    if (p === "statement") return "statement";
+    if (p === "proposition") return "proposition";
+    if (p === "axiom") return "axiom";
+    if (p === "theorem") return "theorem";
+    if (p === "theory") return "theory";
+    if (p === "framework") return "framework";
+    if (p === "toolkit") return "toolkit";
     if (p === "sites") return "sites";
     return "home";
   });
@@ -48,7 +70,9 @@ export default function Layout() {
   const setLang = (l: Locale) => {
     setDropdownOpen(false);
     const p = page();
+    const sub = params.subpage;
     if (p === "home") navigate(`/${l}`);
+    else if (p === "statement" && sub === "hst") navigate(`/${l}/statement/hst`);
     else navigate(`/${l}/${p}`);
   };
 
@@ -56,11 +80,15 @@ export default function Layout() {
   const [menuOpen, setMenuOpen] = createSignal(false);
 
   const closeMenu = () => setMenuOpen(false);
-  const openMenu = () => setMenuOpen(true);
 
   const handleNavClick = (p: Page) => {
     setPage(p);
     closeMenu();
+  };
+
+  const navLabel = (id: Page) => {
+    if (id === "home") return t().nav.top;
+    return t().nav[id as keyof typeof t.nav] ?? id;
   };
 
   return (
@@ -126,7 +154,6 @@ export default function Layout() {
             )}
           </div>
         </header>
-        {/* Mobile menu overlay */}
         {menuOpen() && (
           <div
             class="fixed inset-0 z-40 bg-black/20 lg:hidden"
@@ -140,18 +167,8 @@ export default function Layout() {
           }`}
         >
           <nav class="flex flex-col gap-1 p-4">
-            <button
-              onClick={() => handleNavClick("home")}
-              class={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                page() === "home" ? "bg-cyan-50 text-cyan-600" : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-              }`}
-            >
-              <Archive class="size-4" />
-              {t().nav.top}
-            </button>
-            {navItems.filter((i) => i.id !== "home").map((item) => {
+            {SIDEBAR_ORDER.map((item) => {
               const Icon = item.icon;
-              const label = t().nav[item.id as keyof typeof t.nav];
               return (
                 <button
                   onClick={() => handleNavClick(item.id)}
@@ -162,7 +179,7 @@ export default function Layout() {
                   }`}
                 >
                   <Icon class="size-4" />
-                  {label}
+                  {navLabel(item.id)}
                 </button>
               );
             })}
@@ -176,25 +193,15 @@ export default function Layout() {
             >
               © TANAAKK
             </a>
-            <p class="text-xs text-slate-400">v{__APP_VERSION__} ({__COMMIT_COUNT__})</p>
+            <p class="text-xs text-slate-400">v{__APP_VERSION__}</p>
           </div>
         </div>
 
         <div class="flex">
           <aside class="hidden lg:flex sticky top-14 h-[calc(100vh-3.5rem)] w-56 shrink-0 flex-col border-r border-slate-200 bg-white">
             <nav class="flex flex-col gap-1 p-4">
-              <button
-                onClick={() => setPage("home")}
-                class={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                  page() === "home" ? "bg-cyan-50 text-cyan-600" : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-                }`}
-              >
-                <Archive class="size-4" />
-                {t().nav.top}
-              </button>
-              {navItems.filter((i) => i.id !== "home").map((item) => {
+              {SIDEBAR_ORDER.map((item) => {
                 const Icon = item.icon;
-                const label = t().nav[item.id as keyof typeof t.nav];
                 return (
                   <button
                     onClick={() => setPage(item.id)}
@@ -205,7 +212,7 @@ export default function Layout() {
                     }`}
                   >
                     <Icon class="size-4" />
-                    {label}
+                    {navLabel(item.id)}
                   </button>
                 );
               })}
@@ -219,20 +226,29 @@ export default function Layout() {
               >
                 © TANAAKK
               </a>
-              <p class="text-xs text-slate-400">v{__APP_VERSION__} ({__COMMIT_COUNT__})</p>
+              <p class="text-xs text-slate-400">v{__APP_VERSION__}</p>
             </div>
           </aside>
 
           <main class="min-w-0 flex-1 px-4 py-12 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-5xl">
               {page() === "home" && <HomePage lang={lang()} t={t()} onNavigate={setPage} />}
-              {page() === "hst" && <HST lang={lang()} onBack={() => setPage("home")} />}
-              {page() === "guideline" && <UniversalGuideline lang={lang()} onBack={() => setPage("home")} />}
+              {page() === "pipeline" && <Pipeline lang={lang()} onBack={() => setPage("home")} />}
+              {page() === "schema" && <Schema lang={lang()} onBack={() => setPage("home")} />}
+              {page() === "statement" && !params.subpage && <Statement lang={lang()} onBack={() => setPage("home")} />}
+              {page() === "statement" && params.subpage === "hst" && (
+                <HST lang={lang()} onBack={() => navigate(`/${lang()}/statement`)} />
+              )}
+              {page() === "proposition" && <Proposition lang={lang()} onBack={() => setPage("home")} />}
+              {page() === "axiom" && <Axiom lang={lang()} onBack={() => setPage("home")} />}
+              {page() === "theorem" && <Theorem lang={lang()} onBack={() => setPage("home")} />}
+              {page() === "theory" && <Theory lang={lang()} onBack={() => setPage("home")} />}
+              {page() === "framework" && <Framework lang={lang()} onBack={() => setPage("home")} />}
+              {page() === "toolkit" && <Toolkit lang={lang()} onBack={() => setPage("home")} />}
               {page() === "sites" && <Sites lang={lang()} t={t()} />}
             </div>
           </main>
         </div>
-
       </div>
     </LocaleContext.Provider>
   );

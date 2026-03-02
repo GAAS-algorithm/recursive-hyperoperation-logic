@@ -1,12 +1,13 @@
-import { ArrowLeft, Layers, Database, GitBranch } from "lucide-solid";
+import { ArrowLeft, Layers, Database, GitBranch, ExternalLink } from "lucide-solid";
 import { translations } from "../i18n/translations";
 import type { Locale } from "../i18n/translations";
 
-export default function UniversalGuideline(props: { lang: Locale; onBack: () => void }) {
+export default function Schema(props: { lang: Locale; onBack: () => void }) {
   const t = translations[props.lang];
   return (
     <article class="prose prose-slate max-w-none">
-      <button type="button"
+      <button
+        type="button"
         onClick={props.onBack}
         class="mb-8 inline-flex items-center gap-2 text-sm text-slate-600 hover:text-cyan-700 transition-colors"
       >
@@ -15,18 +16,25 @@ export default function UniversalGuideline(props: { lang: Locale; onBack: () => 
       </button>
 
       <header class="mb-12">
-        <h1 class="text-3xl font-bold text-slate-900 sm:text-4xl">
-          TANAAKK Universal Guideline
+        <h1 class="text-3xl font-bold text-slate-900 sm:text-4xl flex items-center gap-2">
+          <Database class="size-8 text-cyan-600" />
+          Schema
         </h1>
-        <p class="mt-2 text-cyan-600">TANAAKKグループのデータスキーマ・API・SaaSアプリケーション共通ルール</p>
-        <p class="mt-4 text-slate-600">
+        <h2 class="mt-4 text-xl font-semibold text-cyan-600">
+          TANAAKK Universal Guideline
+        </h2>
+        <p class="mt-2 text-slate-600">
+          TANAAKKグループのデータスキーマ・API・SaaSアプリケーション共通ルール
+        </p>
+        <p class="mt-4">
           <a
             href="https://github.com/tanaakk/universal-guideline"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-cyan-600 hover:text-cyan-700 hover:underline"
+            class="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-700 hover:underline"
           >
             github.com/tanaakk/universal-guideline
+            <ExternalLink class="size-4" />
           </a>
         </p>
       </header>

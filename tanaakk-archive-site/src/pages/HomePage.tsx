@@ -1,6 +1,6 @@
 import type { Locale } from "../i18n/translations";
 
-export type Page = "home" | "hst" | "guideline" | "sites";
+export type Page = "home" | "pipeline" | "schema" | "statement" | "proposition" | "axiom" | "theorem" | "theory" | "framework" | "toolkit" | "sites";
 
 type T = ReturnType<typeof import("../i18n/translations").translations.en>;
 
@@ -16,22 +16,19 @@ export default function HomePage(props: {
         <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           {t.home.title}
         </h1>
+        <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
+          {t.home.subtitle}
+        </p>
       </section>
 
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        {t.home.phases.map((phase) => (
-          <article
-            class="rounded-2xl border border-slate-200 bg-slate-50 p-8 transition-all hover:border-cyan-400 hover:bg-white hover:shadow-md"
-          >
-            <h2 class="text-xl font-semibold text-slate-900">
-              {phase.name}
-            </h2>
-            <p class="mt-2 text-slate-600">
-              {phase.period}
-            </p>
-          </article>
-        ))}
-      </div>
+      <section class="max-w-3xl mx-auto space-y-4">
+        <p class="text-slate-700 leading-relaxed">
+          {t.home.portalOverview}
+        </p>
+        <p class="text-sm text-slate-600">
+          <span class="font-medium text-slate-700">{t.home.infrastructureLabel}:</span> {t.home.portalInfrastructure}
+        </p>
+      </section>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function App() {
   return (
     <Router>
       <Route path="/" component={RedirectToEn} />
-      <Route path="/:lang/:page?" component={Layout} />
+      <Route path="/:lang/:page?/:subpage?" component={Layout} />
     </Router>
   );
 }
