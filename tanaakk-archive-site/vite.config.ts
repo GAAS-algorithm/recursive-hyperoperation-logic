@@ -14,10 +14,18 @@ function getCommitCount(): string {
   }
 }
 
+function getShortHash(): string {
+  try {
+    return execSync("git rev-parse --short HEAD").toString().trim();
+  } catch {
+    return "unknown";
+  }
+}
+
 export default defineConfig({
   plugins: [solid(), tailwindcss()],
   define: {
-    __APP_VERSION__: JSON.stringify(`1.0.${getCommitCount()}`),
+    __APP_VERSION__: JSON.stringify(`1.0.${getCommitCount()}-${getShortHash()}`),
     __COMMIT_COUNT__: JSON.stringify(getCommitCount()),
   },
 });
