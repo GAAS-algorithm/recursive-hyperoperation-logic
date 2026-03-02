@@ -167,15 +167,16 @@ export default function Layout() {
               );
             })}
           </nav>
-          <div class="absolute bottom-0 left-0 right-0 border-t border-slate-200 p-4">
+          <div class="absolute bottom-0 left-0 right-0 border-t border-slate-200 p-4 space-y-2">
             <a
               href="https://www.tanaakk.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-xs text-slate-500 hover:text-cyan-600 hover:underline"
+              class="block text-xs text-slate-500 hover:text-cyan-600 hover:underline"
             >
               © TANAAKK
             </a>
+            <p class="text-xs text-slate-400">v{__APP_VERSION__} ({__COMMIT_COUNT__})</p>
           </div>
         </div>
 
@@ -209,15 +210,16 @@ export default function Layout() {
                 );
               })}
             </nav>
-            <div class="mt-auto border-t border-slate-200 p-4">
+            <div class="mt-auto border-t border-slate-200 p-4 space-y-2">
               <a
                 href="https://www.tanaakk.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-xs text-slate-500 hover:text-cyan-600 hover:underline"
+                class="block text-xs text-slate-500 hover:text-cyan-600 hover:underline"
               >
                 © TANAAKK
               </a>
+              <p class="text-xs text-slate-400">v{__APP_VERSION__} ({__COMMIT_COUNT__})</p>
             </div>
           </aside>
 

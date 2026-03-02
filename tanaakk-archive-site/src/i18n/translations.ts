@@ -56,11 +56,76 @@ export const translations = {
     sites: {
       title: "Sites",
       subtitle: "Links to TANAAKK-related sites",
-      items: [
-        { name: "TANAAKK", desc: "Corporate site" },
-        { name: "GAAS", desc: "TANAAKK Archive (this site)" },
-        { name: "Universal Guideline", desc: "Data schema, API, SaaS common rules" },
-        { name: "HST Original", desc: "Holographic Sphere Topology | GAAS systems theory" },
+      launchDate: "Launch",
+      categories: [
+        {
+          name: "Company",
+          items: [
+            { name: "TANAAKK", url: "https://www.tanaakk.com", launchDate: "Dec 1st 2006" },
+            { name: "TANAAKK Facilities", url: "https://facilities.tanaakk.com", launchDate: "Mar 3rd 2017" },
+            { name: "TANAAKK EVGRID", url: "https://rent.tanaakk.com", launchDate: "Jun 13 2023" },
+            { name: "TANAAKK Law", url: "https://law.tanaakk.com", launchDate: "May 1st 2020" },
+            { name: "TANAAKK Vietnam", url: "https://vn.tanaakk.com", launchDate: "Apr 21st 2022" },
+            { name: "ImmuniWeb Japan", url: "https://immuniweb.tanaakk.com", launchDate: "Feb 15th 2019" },
+            { name: "Labibi", url: "https://www.labibi.com", launchDate: "Sep 1st 2025" },
+            { name: "Stomping.jp", url: "https://www.stomping.jp/", launchDate: "Apr 2024" },
+            { name: "Stomping.com", url: "https://www.stomping.com/", launchDate: "Feb 1st 2026" },
+            { name: "HITSERIES CAPITAL (Japan)", url: "https://jp.hitseries.com/", launchDate: "Dec 2025" },
+            { name: "HITSERIES CAPITAL (Singapore)", url: "https://www.hitseries.com/", launchDate: "Feb 2024" },
+            { name: "Lecien Corporation(US)", url: "https://www.lecien.com", launchDate: "Sep 26th 2025" },
+            { name: "Lecien Japan", url: "https://www.lecien.co.jp", launchDate: "Feb 1933" },
+            { name: "Lecien Lace Museum", url: "https://museum.lecien.com", launchDate: "Feb 1933" },
+          ],
+        },
+        {
+          name: "Publish",
+          items: [
+            { name: "TANAAKK Publishing", url: "https://publish.tanaakk.com", launchDate: "May 11th 2021" },
+          ],
+        },
+        {
+          name: "HDC-Hybrid Direct to Consumer",
+          items: [
+            { name: "Tcab", url: "https://www.tcab.com", launchDate: "Sep 2nd 2025" },
+            { name: "Lecien Online", url: "https://inner-jp.lecien.com", launchDate: "Aug 1st 2025" },
+            { name: "Cosmo Online", url: "https://cosmo-jp.lecien.com", launchDate: "Feb 18th 2026" },
+          ],
+        },
+        {
+          name: "DPM-Distributed Production Model",
+          items: [
+            { name: "Lecien DPM", url: "https://dps-top.lecien.com/", launchDate: "Feb 22nd 2026" },
+          ],
+        },
+        {
+          name: "DPM-Distributed Processing Node",
+          items: [
+            { name: "Tbedy", url: "https://dpn.tbedy.com", launchDate: "Feb 22nd 2026" },
+          ],
+        },
+        {
+          name: "Github Guidelines",
+          items: [
+            { name: "Github Guidelines", url: "https://github.com/tanaakk", launchDate: "Feb 18th 2026" },
+          ],
+        },
+        {
+          name: "Toolkits",
+          items: [
+            { name: "TANAAKK T-NOTES", url: "https://notes.tanaakk.com/", launchDate: "Dec 1st 2006" },
+            { name: "Axiom", url: "https://axiom.tanaakk.com", launchDate: "Mar 2nd 2026" },
+            { name: "R&D Library", url: "https://library.tanaakk.com", launchDate: "Mar 1st 2026" },
+            { name: "GAAS", url: "https://gaas.tanaakk.com", launchDate: "Jun 29th 2021" },
+            { name: "Humanity Black Box", url: "https://humanity-black-box.web.app/", launchDate: "Mar 1st 2026" },
+            { name: "GAAS Active Probe", url: "https://gaas-active-probe.streamlit.app/", launchDate: "Feb 17th 2026" },
+            { name: "Boxing Performance Library", url: "https://boxing.tanaakk.com/en/", launchDate: "Mar 1st 2026" },
+            { name: "Football Performance Library", url: "https://football.tanaakk.com", launchDate: "Mar 2nd 2026" },
+            { name: "Tennis Performance Library", url: "https://tennis.tanaakk.com", launchDate: "Mar 1st 2026" },
+            { name: "Sport Performance Library", url: "https://sport.tanaakk.com", launchDate: "Mar 1st 2026" },
+            { name: "Entertainment Performance Library", url: "https://entertainment.tanaakk.com/", launchDate: "Mar 1st 2026" },
+            { name: "HITSERIES CLOUD", url: "https://app.hitseries.com/", launchDate: "Sep 1st 2022" },
+          ],
+        },
       ],
     },
     common: {
@@ -110,11 +175,76 @@ export const translations = {
     sites: {
       title: "Sites",
       subtitle: "TANAAKK関連サイトへのリンク集",
-      items: [
-        { name: "TANAAKK", desc: "コーポレートサイト" },
-        { name: "GAAS", desc: "TANAAKK Archive（本サイト）" },
-        { name: "Universal Guideline", desc: "データスキーマ・API・SaaS共通ルール" },
-        { name: "HST 原文", desc: "Holographic Sphere Topology｜GAAS流システム論" },
+      launchDate: "開設",
+      categories: [
+        {
+          name: "Company",
+          items: [
+            { name: "TANAAKK", url: "https://www.tanaakk.com", launchDate: "Dec 1st 2006" },
+            { name: "TANAAKK Facilities", url: "https://facilities.tanaakk.com", launchDate: "Mar 3rd 2017" },
+            { name: "TANAAKK EVGRID", url: "https://rent.tanaakk.com", launchDate: "Jun 13 2023" },
+            { name: "TANAAKK Law", url: "https://law.tanaakk.com", launchDate: "May 1st 2020" },
+            { name: "TANAAKK Vietnam", url: "https://vn.tanaakk.com", launchDate: "Apr 21st 2022" },
+            { name: "ImmuniWeb Japan", url: "https://immuniweb.tanaakk.com", launchDate: "Feb 15th 2019" },
+            { name: "Labibi", url: "https://www.labibi.com", launchDate: "Sep 1st 2025" },
+            { name: "Stomping.jp", url: "https://www.stomping.jp/", launchDate: "Apr 2024" },
+            { name: "Stomping.com", url: "https://www.stomping.com/", launchDate: "Feb 1st 2026" },
+            { name: "HITSERIES CAPITAL (Japan)", url: "https://jp.hitseries.com/", launchDate: "Dec 2025" },
+            { name: "HITSERIES CAPITAL (Singapore)", url: "https://www.hitseries.com/", launchDate: "Feb 2024" },
+            { name: "Lecien Corporation(US)", url: "https://www.lecien.com", launchDate: "Sep 26th 2025" },
+            { name: "Lecien Japan", url: "https://www.lecien.co.jp", launchDate: "Feb 1933" },
+            { name: "Lecien Lace Museum", url: "https://museum.lecien.com", launchDate: "Feb 1933" },
+          ],
+        },
+        {
+          name: "Publish",
+          items: [
+            { name: "TANAAKK Publishing", url: "https://publish.tanaakk.com", launchDate: "May 11th 2021" },
+          ],
+        },
+        {
+          name: "HDC-Hybrid Direct to Consumer",
+          items: [
+            { name: "Tcab", url: "https://www.tcab.com", launchDate: "Sep 2nd 2025" },
+            { name: "Lecien Online", url: "https://inner-jp.lecien.com", launchDate: "Aug 1st 2025" },
+            { name: "Cosmo Online", url: "https://cosmo-jp.lecien.com", launchDate: "Feb 18th 2026" },
+          ],
+        },
+        {
+          name: "DPM-Distributed Production Model",
+          items: [
+            { name: "Lecien DPM", url: "https://dps-top.lecien.com/", launchDate: "Feb 22nd 2026" },
+          ],
+        },
+        {
+          name: "DPM-Distributed Processing Node",
+          items: [
+            { name: "Tbedy", url: "https://dpn.tbedy.com", launchDate: "Feb 22nd 2026" },
+          ],
+        },
+        {
+          name: "Github Guidelines",
+          items: [
+            { name: "Github Guidelines", url: "https://github.com/tanaakk", launchDate: "Feb 18th 2026" },
+          ],
+        },
+        {
+          name: "Toolkits",
+          items: [
+            { name: "TANAAKK T-NOTES", url: "https://notes.tanaakk.com/", launchDate: "Dec 1st 2006" },
+            { name: "Axiom", url: "https://axiom.tanaakk.com", launchDate: "Mar 2nd 2026" },
+            { name: "R&D Library", url: "https://library.tanaakk.com", launchDate: "Mar 1st 2026" },
+            { name: "GAAS", url: "https://gaas.tanaakk.com", launchDate: "Jun 29th 2021" },
+            { name: "Humanity Black Box", url: "https://humanity-black-box.web.app/", launchDate: "Mar 1st 2026" },
+            { name: "GAAS Active Probe", url: "https://gaas-active-probe.streamlit.app/", launchDate: "Feb 17th 2026" },
+            { name: "Boxing Performance Library", url: "https://boxing.tanaakk.com/en/", launchDate: "Mar 1st 2026" },
+            { name: "Football Performance Library", url: "https://football.tanaakk.com", launchDate: "Mar 2nd 2026" },
+            { name: "Tennis Performance Library", url: "https://tennis.tanaakk.com", launchDate: "Mar 1st 2026" },
+            { name: "Sport Performance Library", url: "https://sport.tanaakk.com", launchDate: "Mar 1st 2026" },
+            { name: "Entertainment Performance Library", url: "https://entertainment.tanaakk.com/", launchDate: "Mar 1st 2026" },
+            { name: "HITSERIES CLOUD", url: "https://app.hitseries.com/", launchDate: "Sep 1st 2022" },
+          ],
+        },
       ],
     },
     common: {
@@ -164,11 +294,76 @@ export const translations = {
     sites: {
       title: "Sites",
       subtitle: "Liên kết đến các trang liên quan TANAAKK",
-      items: [
-        { name: "TANAAKK", desc: "Trang corporate" },
-        { name: "GAAS", desc: "TANAAKK Archive (trang này)" },
-        { name: "Universal Guideline", desc: "Quy tắc chung schema dữ liệu, API, SaaS" },
-        { name: "HST gốc", desc: "Holographic Sphere Topology | Lý thuyết hệ thống GAAS" },
+      launchDate: "Launch",
+      categories: [
+        {
+          name: "Company",
+          items: [
+            { name: "TANAAKK", url: "https://www.tanaakk.com", launchDate: "Dec 1st 2006" },
+            { name: "TANAAKK Facilities", url: "https://facilities.tanaakk.com", launchDate: "Mar 3rd 2017" },
+            { name: "TANAAKK EVGRID", url: "https://rent.tanaakk.com", launchDate: "Jun 13 2023" },
+            { name: "TANAAKK Law", url: "https://law.tanaakk.com", launchDate: "May 1st 2020" },
+            { name: "TANAAKK Vietnam", url: "https://vn.tanaakk.com", launchDate: "Apr 21st 2022" },
+            { name: "ImmuniWeb Japan", url: "https://immuniweb.tanaakk.com", launchDate: "Feb 15th 2019" },
+            { name: "Labibi", url: "https://www.labibi.com", launchDate: "Sep 1st 2025" },
+            { name: "Stomping.jp", url: "https://www.stomping.jp/", launchDate: "Apr 2024" },
+            { name: "Stomping.com", url: "https://www.stomping.com/", launchDate: "Feb 1st 2026" },
+            { name: "HITSERIES CAPITAL (Japan)", url: "https://jp.hitseries.com/", launchDate: "Dec 2025" },
+            { name: "HITSERIES CAPITAL (Singapore)", url: "https://www.hitseries.com/", launchDate: "Feb 2024" },
+            { name: "Lecien Corporation(US)", url: "https://www.lecien.com", launchDate: "Sep 26th 2025" },
+            { name: "Lecien Japan", url: "https://www.lecien.co.jp", launchDate: "Feb 1933" },
+            { name: "Lecien Lace Museum", url: "https://museum.lecien.com", launchDate: "Feb 1933" },
+          ],
+        },
+        {
+          name: "Publish",
+          items: [
+            { name: "TANAAKK Publishing", url: "https://publish.tanaakk.com", launchDate: "May 11th 2021" },
+          ],
+        },
+        {
+          name: "HDC-Hybrid Direct to Consumer",
+          items: [
+            { name: "Tcab", url: "https://www.tcab.com", launchDate: "Sep 2nd 2025" },
+            { name: "Lecien Online", url: "https://inner-jp.lecien.com", launchDate: "Aug 1st 2025" },
+            { name: "Cosmo Online", url: "https://cosmo-jp.lecien.com", launchDate: "Feb 18th 2026" },
+          ],
+        },
+        {
+          name: "DPM-Distributed Production Model",
+          items: [
+            { name: "Lecien DPM", url: "https://dps-top.lecien.com/", launchDate: "Feb 22nd 2026" },
+          ],
+        },
+        {
+          name: "DPM-Distributed Processing Node",
+          items: [
+            { name: "Tbedy", url: "https://dpn.tbedy.com", launchDate: "Feb 22nd 2026" },
+          ],
+        },
+        {
+          name: "Github Guidelines",
+          items: [
+            { name: "Github Guidelines", url: "https://github.com/tanaakk", launchDate: "Feb 18th 2026" },
+          ],
+        },
+        {
+          name: "Toolkits",
+          items: [
+            { name: "TANAAKK T-NOTES", url: "https://notes.tanaakk.com/", launchDate: "Dec 1st 2006" },
+            { name: "Axiom", url: "https://axiom.tanaakk.com", launchDate: "Mar 2nd 2026" },
+            { name: "R&D Library", url: "https://library.tanaakk.com", launchDate: "Mar 1st 2026" },
+            { name: "GAAS", url: "https://gaas.tanaakk.com", launchDate: "Jun 29th 2021" },
+            { name: "Humanity Black Box", url: "https://humanity-black-box.web.app/", launchDate: "Mar 1st 2026" },
+            { name: "GAAS Active Probe", url: "https://gaas-active-probe.streamlit.app/", launchDate: "Feb 17th 2026" },
+            { name: "Boxing Performance Library", url: "https://boxing.tanaakk.com/en/", launchDate: "Mar 1st 2026" },
+            { name: "Football Performance Library", url: "https://football.tanaakk.com", launchDate: "Mar 2nd 2026" },
+            { name: "Tennis Performance Library", url: "https://tennis.tanaakk.com", launchDate: "Mar 1st 2026" },
+            { name: "Sport Performance Library", url: "https://sport.tanaakk.com", launchDate: "Mar 1st 2026" },
+            { name: "Entertainment Performance Library", url: "https://entertainment.tanaakk.com/", launchDate: "Mar 1st 2026" },
+            { name: "HITSERIES CLOUD", url: "https://app.hitseries.com/", launchDate: "Sep 1st 2022" },
+          ],
+        },
       ],
     },
     common: {
