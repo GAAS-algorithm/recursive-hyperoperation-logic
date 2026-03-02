@@ -23,16 +23,6 @@ export default function Toolkit(props: { lang: Locale; onBack: () => void }) {
         <p class="mt-2 text-slate-600">{t.home.toolkitSubtitle}</p>
       </header>
 
-      <section class="space-y-6">
-        <h2 class="text-xl font-semibold text-slate-800">GAAS Stack</h2>
-        <ul class="list-disc pl-6 space-y-2 text-slate-700">
-          <li><strong>SolidJS</strong> — Reactive UI framework</li>
-          <li><strong>Tailwind v4</strong> — Utility-first CSS</li>
-          <li><strong>Bun</strong> — Runtime & package manager</li>
-          <li><strong>Drizzle</strong> — TypeScript ORM</li>
-          <li><strong>Lucide</strong> — Icon library</li>
-        </ul>
-      </section>
     </article>
   );
 }

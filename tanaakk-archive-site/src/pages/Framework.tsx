@@ -38,6 +38,37 @@ export default function Framework(props: { lang: Locale; onBack: () => void }) {
         <p class="text-slate-700">
           {t.home.pipeline.axiom.desc} {t.home.pipeline.proof.desc} {t.home.pipeline.theorems.desc} {t.home.pipeline.theory.desc}
         </p>
+
+        {(t.home as any).dashboardMapping && (
+          <div class="mt-8 overflow-x-auto">
+            <h3 class="text-lg font-semibold text-slate-900 mb-4">
+              {(t.home as any).dashboardMapping.title}
+            </h3>
+            <table class="min-w-full divide-y divide-slate-200 rounded-lg border border-slate-200">
+              <thead class="bg-slate-50">
+                <tr>
+                  <th class="px-4 py-3 text-left text-sm font-semibold text-slate-900">Category</th>
+                  <th class="px-4 py-3 text-left text-sm font-semibold text-slate-900">Item / Value</th>
+                  <th class="px-4 py-3 text-left text-sm font-semibold text-slate-900">Description</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200 bg-white">
+                {["framework", "pipeline", "toolkit", "taxonomy"].map((key) => {
+                  const m = (t.home as any).dashboardMapping?.[key];
+                  if (!m) return null;
+                  return (
+                    <tr key={key}>
+                      <td class="px-4 py-3 text-sm font-medium text-slate-900">{m.label}</td>
+                      <td class="px-4 py-3 text-sm text-cyan-600 font-medium">{m.value}</td>
+                      <td class="px-4 py-3 text-sm text-slate-600">{m.desc}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
+
         <button
           type="button"
           onClick={goToPipeline}

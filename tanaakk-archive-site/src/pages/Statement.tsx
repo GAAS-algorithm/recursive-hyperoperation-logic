@@ -25,11 +25,24 @@ export default function Statement(props: { lang: Locale; onBack: () => void }) {
           <MessageSquare class="size-8 text-cyan-600" />
           {t.home.statementTitle}
         </h1>
-        <p class="mt-2 text-slate-600">{t.home.statementSubtitle}</p>
+        {t.home.statementSubtitle && <p class="mt-2 text-slate-600">{t.home.statementSubtitle}</p>}
       </header>
 
       <section class="space-y-6">
-        <p class="text-slate-700">{t.home.statementBody}</p>
+        <div class="rounded-xl border border-slate-200 bg-slate-50 p-6 mt-8">
+          <h2 class="text-xl font-semibold text-slate-900 mb-4">
+            {(t.home as any).statementCore?.title ?? "Core Statement Summary"}
+          </h2>
+          {((t.home as any).statementCore?.intro ?? "") && (
+            <p class="text-slate-700 mb-4">{(t.home as any).statementCore.intro}</p>
+          )}
+          <ul class="list-disc list-inside space-y-2 text-slate-700">
+            {((t.home as any).statementCore?.items ?? []).map((item: string, i: number) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </div>
+
         <button
           type="button"
           onClick={goToPipeline}
